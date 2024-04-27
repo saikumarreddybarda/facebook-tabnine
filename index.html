@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #3b5998;
+            color: white;
+            padding: 10px;
+        }
+
+        header input[type="text"] {
+            border: none;
+            background-color: #3b5998;
+            color: white;
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        header input[type="submit"] {
+            background-color: #4267b2;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        main {
+            margin-top: 20px;
+        }
+
+        .newsfeed {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .newsfeed-item {
+            width: 30%;
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .newsfeed-item img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .newsfeed-item h3 {
+            margin-top: 0;
+        }
+
+        .newsfeed-item p {
+            color: #888;
+        }
+
+        .messenger {
+            width: 30%;
+            height: 500px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .messenger h3 {
+            margin-top: 0;
+        }
+
+        .messenger input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .messenger input[type="submit"] {
+            background-color: #4267b2;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <input type="text" placeholder="Search for people, pages, or groups">
+        <input type="submit" value="Search">
+    </header>
+    <main>
+        <div class="newsfeed">
+            <div class="newsfeed-item">
+                <img src="https://picsum.photos/200" alt="">
+                <h3>John Doe</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="newsfeed-item">
+                <img src="https://picsum.photos/200" alt="">
+                <h3>Jane Doe</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="newsfeed-item">
+                <img src="https://picsum.photos/200" alt="">
+                <h3>Mike Smith</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="messenger">
+            <h3>Messenger</h3>
+            <input type="text" placeholder="Type a message">
+            <input type="submit" value="Send">
+        </div>
+    </main>
+</body>
+</html>
